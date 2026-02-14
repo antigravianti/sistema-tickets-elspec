@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyALMi2idmdHh-tBD9VLq2jBjS4J8xsr_oo",
-    authDomain: "ticketsystem-elspec.firebaseapp.com",
-    projectId: "ticketsystem-elspec",
-    storageBucket: "ticketsystem-elspec.firebasestorage.app",
-    messagingSenderId: "928651395872",
-    appId: "1:928651395872:web:04821a717284c02a36cd45"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
